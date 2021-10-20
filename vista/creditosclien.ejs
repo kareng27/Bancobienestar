@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario creditos</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/actualizarcre.js"></script>
+    <script src="js/eliminarcre.js"></script>
+    <link rel="shortcut icon" href="img/icon.png">
+    <link href= "css/estilo.css" rel="stylesheet" type="text/css">
+    <link href= "css/estilovistclien.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header id="encabezado">
+        <img src="img/logo_large.png" class="logo-menu">
+        <div class="encacuadro">
+          <a href="/usuariosclien"><%= uss %></a>
+          <img src="img/logo_small_icon_only.png" alt="">
+          <a href="cerrar">Cerrar sesion</a>
+      </div>     
+      </header>
+  
+  <div class="menuvolver"><a href="/vistacliente">volver al Menu principal</a></div>
+
+  <div class="titulo-cre">
+    Creditos
+</div>
+
+
+
+    <from action="" name="frm" id="frm" >
+        <table class="table">
+            <thead>
+                <tr>
+
+                    <th>CODIGO</th>
+                    <th>DOCUMENTO</th>
+                    <th>CODIGO LINEA</th>
+                    <th>MONTO PRESTADO</th>
+                    <th>FECHA APROBADO</th>
+                    <th>PLAZO</th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+             <% datos.forEach(function (datos){ %>    
+                <tr>
+                    <td><input type="text" value="<%=datos.CreCodigo%>" name="codigo" id="cod" class="cod"></td>
+                    <td><input type="text" value="<%=datos.CliDoc%>" name="doccli" id="doc" class="doc"></td>
+                    <td><input type="text" value="<%=datos.CreCodLinea%>" name="codli" id="codli" class="codli"></td>
+                    <td><input type="text" value="<%=datos.CreMontoPrestado%>" name="monpres" id="monpres" class="monpres"></td>
+                    <td><input type="text" value="<%=datos.CreFechaAproba%>" name="fecap" id="fecap" class="fecap"></td>
+                    <td><input type="text" value="<%=datos.CrePlazo%>" name="crepla" id="crepla" class="crepla"></td>
+                </tr>
+             <%})%>
+            </tbody>
+        </table>
+    </from>
+
+
+    <div class="espacio">.</div>
+</body>
+</html>

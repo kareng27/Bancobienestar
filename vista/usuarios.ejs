@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario usuarios</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/actualizar.js"></script>
+    <script src="js/eliminar.js"></script>
+    <link rel="shortcut icon" href="img/icon.png">
+    <link href= "css/estilo.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+   <header id="encabezado">
+      <img src="img/logo_large.png" class="logo-menu">
+      <div class="encacuadro">
+        <p><%= uss %></p>
+        <img src="img/logo_small_icon_only.png" alt="">
+        <a href="cerrar">Cerrar sesion</a>
+    </div>     
+    </header>
+
+<div class="menuvolver"><a href="/vistaadmin">volver al Menu principal</a></div>
+
+    <div id="cont-usu">
+        <div id="centrar-usu">
+            <div id="usud">
+                <div class="titulo-usu">
+                    Usuarios
+                </div>
+                <form id="loginform" action="/frminsertar" method="POST">
+
+                    <input type="text" name="UsuDoc" placeholder="Documento" required>
+
+                    <input type="text" name="UsuNom" placeholder="Usuario" required>
+                    
+                    <input type="password" placeholder="Clave" name="UsuClave" required>
+
+                    <input type="text" name="UsuRol" placeholder="Rol" required>
+
+                    <input type="text" name="UsuEstado" placeholder="Estado" required>
+
+                    <input type="text" name="UsuImagen" placeholder="Imagen texto" required>
+                    
+                    <button type="submit" title="Enviar" >Enviar</button>
+                </form>
+                <div class="pie-form-usu">
+                    <a href="#">¿Perdiste tu contraseña?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <from action="" name="frm" id="frm">
+        <table class="table">
+            <thead>
+                <tr>
+
+                    <th>Documento</th>
+                    <th>USUARIO</th>
+                    <th>CLAVE</th>
+                    <th>ROL</th>
+                    <th>ESTADO</th>
+                    <th>IMAGEN</th>
+                    <th>ACTUALIZAR</th>
+                    <th>ELIMINAR</th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+             <% datos.forEach(function (datos){ %>    
+                <tr>
+                    <td><input type="text" value="<%=datos.UsuDoc%>" name="doccli" id="doc" class="doc"></td>
+                    <td><input type="text" value="<%=datos.UsuNom%>" name="nomusu" id="usu" class="usu"></td>
+                    <td><input type="text" value="<%=datos.UsuClave%>" name="clave" id="cla" class="cla"></td>
+                    <td><input type="text" value="<%=datos.UsuRol%>" name="rol" id="rol" class="rol"></td>
+                    <td><input type="text" value="<%=datos.UsuEstado%>" name="estado" id="est" class="est"></td>
+                    <td><input type="text" value="<%=datos.UsuImagen%>" name="imagen" id="img" class="img"></td>
+                    <td><input type="submit" value="Actualizar" name="btnact" id="btnact" class="btnact"></td>
+                    <td><input type="submit" value="Eliminar" name="btneli" id="btneli" class="btneli"></td>
+                </tr>
+             <%})%>
+            </tbody>
+        </table>
+    </from>
+</body>
+</html>

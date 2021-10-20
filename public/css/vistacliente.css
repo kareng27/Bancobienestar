@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(52, 73, 94);
+    background: url("../img/fondo.PNG") no-repeat center center/cover;
+    overflow-x: hidden;
+}
+
+.datos{
+
+    width: 22%;
+    padding: 50px 30px;
+    background-color: rgb(72, 201, 176);
+    
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    box-sizing: border-box;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.cuadros{ 
+    background-color: rgb(255,255,255);
+    height: 35px;
+
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+}
+
+.principal{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.bienvenido{
+    width: 75%;
+    height: 30px;
+    padding-left: 5%;
+}
+
+
+.imagen{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(72, 201, 176);
+    width: 15%;
+    height: 70px;
+    align-items: center;
+}
+
+.imagen img{
+    margin: 4px;
+    height: 60px;
+    width: 30%;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+.imagen button{
+    height: 20px;
+    width: 60%;
+    background-color: rgb(255,255,255);
+}

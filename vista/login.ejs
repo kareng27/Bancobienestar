@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="img/icon.png">
+    <link href= "./css/estilo.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header id="encabezado">
+      <img src="img/logo_large.png" class="logo-menu">
+      </header>
+      <nav id="menu">
+      <ul>
+      <li><a href="/index"> Inicio </a></li>
+      <li><a href="#"> Acerca de nosotros </a></li>
+      <li><a href="#"> Necesidades </a></li>
+      <li><a href="#"> productos y servicios </a></li>
+     </ul>
+  </nav> 
+
+    <div id="cont">
+        <div id="centrar">
+            <div id="login">
+                <div class="titulo">
+                    Login<br>Bienvenido
+                </div>
+                <form id="loginform" action="/login" method="POST">
+                    <input type="text" name="usuario" placeholder="Usuario" required>
+                    
+                    <input type="password" placeholder="Contraseña" name="password" required>
+                    
+                    <button type="submit" title="Ingresar" name="Ingresar">Ingresar</button>
+                </form>
+                <div class="pie-form">
+                    <a href="#">¿Perdiste tu contraseña?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

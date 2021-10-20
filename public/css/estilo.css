@@ -1,0 +1,912 @@
+body{
+    background-color: rgb(52, 73, 94);
+    background: url("../img/fondo.PNG") no-repeat center center/cover;
+    overflow-x: hidden;
+}
+
+.clibodyoverflow{
+    overflow-x: visible;
+}
+
+.logo-menu{
+    width: 190px;
+    height: 73px;
+    margin-left: 43.5%;
+}
+
+
+.encacuadro{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(72, 201, 176);
+    /*width: 18%;*/
+    width: auto;
+    height: 60px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.encacuadro img{
+    margin: 4px;
+    height: 45px;
+    width: 20%;
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+}
+
+.encacuadro p{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: rgb(52, 73, 94);
+}
+
+.encacuadro a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: rgb(52, 73, 94);
+}
+
+.encacuadro a:hover{
+    background-color: rgb(52, 73, 94);
+    color: rgb(189, 195, 199);
+}
+
+/*MENU PRINCIPAL*/
+#encabezado{
+	height: 80px;
+	width: 1325px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+	border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+text-align: center;
+}
+
+#menu{
+	height: 55px;
+	width: 1320px;
+	margin-top: 20px;
+	border-radius: 5px 5px 5px 5px;
+-moz-border-radius: 5px 5px 5px 5px;
+-webkit-border-radius: 5px 5px 5px 5px;
+border: 2px solid rgb(72, 201, 176);
+background-color: rgb(72, 201, 176);
+vertical-align: middle;
+}
+
+#menu {
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+#menu ul {
+    list-style: none;
+    overflow: hidden; 
+    display: inline-flex;
+    padding-left: 25%;
+  }
+#menu ul li {
+    padding: 10px;
+  }
+#menu ul li a {
+    display: block; 
+    padding: 20px;
+    color: rgb(39, 55, 70);
+    text-decoration: none;
+  }
+#menu ul li:hover {
+    height: 60px;
+    background: rgb(189, 195, 199);
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border: 2px solid rgb(72, 201, 176);
+  }
+/*CIERRE MENU PRINCIPAL PAGINAS:USUARIOS,LOGIN*/
+
+.menuvolver{
+    width: 40%;
+    text-align: center;
+    color: rgb(39, 55, 70);
+}
+.menuvolver a{
+    text-decoration: none;
+    font-size: 1.2em;
+    background-color: rgb(72, 201, 176);
+    color: rgb(39, 55, 70);
+}
+
+/* LOGIN */
+  #cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+
+#centrar {
+    max-width: 320px;
+    width: 100%;
+}
+
+.titulo {
+    font-size: 250%;
+    color:rgb(39, 55, 70);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#login {
+    width: 100%;
+    padding: 50px 30px;
+    background-color: rgb(72, 201, 176);
+    
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    box-sizing: border-box;
+}
+
+#login input {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color: rgba(0,0,0,);
+    
+    display: block;
+    width: 100%;
+    height: 40px;
+    
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 10px;
+    
+    box-sizing: border-box;
+    
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+#login input::placeholder {
+    font-family: 'Overpass', sans-serif;
+    color: rgb(189, 195, 199);
+}
+
+#login button {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color:rgb(189, 195, 199);
+    width: 100%;
+    height: 40px;
+    border: none;
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    background-color: rgb(39, 55, 70);
+    
+    margin-top: 10px;
+}
+
+#login button:hover {
+    background-color: rgb(189, 195, 199);
+    color:rgb(39, 55, 70);
+}
+
+.pie-form {
+    font-size: 90%;
+    text-align: center;    
+    margin-top: 15px;
+}
+
+.pie-form a {
+    display: block;
+    text-decoration: none;
+    color: rgb(39, 55, 70);
+    margin-bottom: 3px;
+}
+
+.pie-form a:hover {
+    color: #000;
+}
+
+/*CIERRE LOGIN*/
+
+/* FORMULARIO USUARIOS*/
+#cont-usu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+
+#centrar-usu {
+    max-width: 320px;
+    width: 100%;
+}
+
+.titulo-usu {
+    font-size: 250%;
+    color:rgb(39, 55, 70);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#usud {
+    width: 100%;
+    padding: 50px 30px;
+    background-color: rgb(72, 201, 176);
+    
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    box-sizing: border-box;
+}
+
+#usud input {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color: rgba(0,0,0,);
+    
+    display: block;
+    width: 100%;
+    height: 40px;
+    
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 10px;
+    
+    box-sizing: border-box;
+    
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+#usud input::placeholder {
+    font-family: 'Overpass', sans-serif;
+    color: rgb(189, 195, 199);
+}
+
+#usud button {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color:rgb(189, 195, 199);
+    width: 100%;
+    height: 40px;
+    border: none;
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    background-color: rgb(39, 55, 70);
+    
+    margin-top: 10px;
+}
+
+#usud button:hover {
+    background-color: rgb(189, 195, 199);
+    color:rgb(39, 55, 70);
+}
+
+.pie-form-usu {
+    font-size: 90%;
+    text-align: center;    
+    margin-top: 15px;
+}
+
+.pie-form-usu a {
+    display: block;
+    text-decoration: none;
+    color: rgb(39, 55, 70);
+    margin-bottom: 3px;
+}
+
+.pie-form a:hover {
+    color: #000;
+}
+
+/* CIERRE FORMULARIO USUARIOS*/
+
+/* FORMULARIO USUARIOS*/
+#cont-cli {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+
+#centrar-cli {
+    max-width: 320px;
+    width: 100%;
+}
+
+.titulo-cli {
+    font-size: 250%;
+    color:rgb(39, 55, 70);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#cli {
+    width: 100%;
+    padding: 50px 30px;
+    background-color: rgb(72, 201, 176);
+    
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    box-sizing: border-box;
+}
+
+#cli input {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color: rgba(0,0,0,);
+    
+    display: block;
+    width: 100%;
+    height: 40px;
+    
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 10px;
+    
+    box-sizing: border-box;
+    
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+#cli input::placeholder {
+    font-family: 'Overpass', sans-serif;
+    color: rgb(189, 195, 199);
+}
+
+#cli button {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color:rgb(189, 195, 199);
+    width: 100%;
+    height: 40px;
+    border: none;
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    background-color: rgb(39, 55, 70);
+    
+    margin-top: 10px;
+}
+
+#cli button:hover {
+    background-color: rgb(189, 195, 199);
+    color:rgb(39, 55, 70);
+}
+
+/* CIERRE FORMULARIO CLIENTES*/
+
+/* FORMULARIO CREDITOS*/
+#cont-cre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+
+#centrar-cre {
+    max-width: 320px;
+    width: 100%;
+}
+
+.titulo-cre {
+    font-size: 250%;
+    color:rgb(39, 55, 70);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#cre {
+    width: 100%;
+    padding: 50px 30px;
+    background-color: rgb(72, 201, 176);
+    
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    box-sizing: border-box;
+}
+
+#cre input {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color: rgba(0,0,0,);
+    
+    display: block;
+    width: 100%;
+    height: 40px;
+    
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 10px;
+    
+    box-sizing: border-box;
+    
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+#cre input::placeholder {
+    font-family: 'Overpass', sans-serif;
+    color: rgb(189, 195, 199);
+}
+
+#cre button {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color:rgb(189, 195, 199);
+    width: 100%;
+    height: 40px;
+    border: none;
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    background-color: rgb(39, 55, 70);
+    
+    margin-top: 10px;
+}
+
+#cre button:hover {
+    background-color: rgb(189, 195, 199);
+    color:rgb(39, 55, 70);
+}
+
+/* CIERRE FORMULARIO CREDITOS*/
+
+/* FORMULARIO CREDITOS*/
+#cont-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+
+#centrar-line {
+    max-width: 320px;
+    width: 100%;
+}
+
+.titulo-line {
+    font-size: 250%;
+    color:rgb(39, 55, 70);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#line {
+    width: 100%;
+    padding: 50px 30px;
+    background-color: rgb(72, 201, 176);
+    
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    box-sizing: border-box;
+}
+
+#line input {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color: rgba(0,0,0,);
+    
+    display: block;
+    width: 100%;
+    height: 40px;
+    
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 10px;
+    
+    box-sizing: border-box;
+    
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+#line input::placeholder {
+    font-family: 'Overpass', sans-serif;
+    color: rgb(189, 195, 199);
+}
+
+#line button {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color:rgb(189, 195, 199);
+    width: 100%;
+    height: 40px;
+    border: none;
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    background-color: rgb(39, 55, 70);
+    
+    margin-top: 10px;
+}
+
+#line button:hover {
+    background-color: rgb(189, 195, 199);
+    color:rgb(39, 55, 70);
+}
+
+/* CIERRE FORMULARIO LINEAS*/
+
+
+/*CSS INDEX.HTML */
+
+/* INDEX PRINCIPAL cajas */
+.cajas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin: 70px 0;
+    margin-left: 20%;
+    margin-right: 150px;
+    align-items: center;
+  }
+
+  .cuadro{
+    display: block;
+    width: 70%;
+    height: 180px;
+    margin: 0px;
+    background-color:  rgb(189, 195, 199);
+    
+  }
+
+  .cajas img {
+    width: 70%;
+    height: 180px;
+    margin: 0px;
+  }
+  
+  .cajas h3{
+    font-size: 25px;
+    margin: 10px 0;
+    text-align: center;
+    color: rgb(39, 55, 70);
+  }
+
+  .cajas p{
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+    color: rgb(39, 55, 70);
+  }
+  
+.cajas a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+}
+
+.cajas a:hover {
+    color: rgb(52, 73, 94);
+}
+
+/* CIERRE INDEX PRINCIPAL cajas */
+
+/* CAJA SUCURSAL*/
+.caja-sucursal p {
+    margin: 10px 0 20px 0;
+  }
+  
+.caja-sucursal {
+    width: 95%;
+    height: 350px;
+    margin: 30px;
+    background: url("../img/seccion.jpg") no-repeat center center/cover;
+    margin-bottom: 40px;
+  }
+  
+  .caja-sucursal .contentido {
+    width: 50%;
+    padding: 100px 0 0 30px;
+    color: rgb(189, 195, 199);
+    text-shadow: black;
+  }
+
+  .caja-sucursal a{
+      display: block; 
+      padding: 20px;
+      color: rgb(189, 195, 199);
+      text-decoration: none;
+      background-color: rgb(39, 55, 70);
+      width: 7%;
+
+      border-radius: 10px 10px 10px 10px;
+      -moz-border-radius: 10px 10px 10px 10px;
+      -webkit-border-radius: 10px 10px 10px 10px;
+  }
+
+  .caja-sucursal a:hover{
+      color: rgb(39, 55, 70);
+      background-color: rgb(189, 195, 199);
+
+      display: block; 
+      padding: 20px;
+      text-decoration: none;
+      width: 7%;
+
+      border-radius: 10px 10px 10px 10px;
+      -moz-border-radius: 10px 10px 10px 10px;
+      -webkit-border-radius: 10px 10px 10px 10px;
+  }
+
+/* CAJA SUCURSAL*/
+
+/*FOOTER*/
+
+.social {
+    margin: 50px;
+  }
+  .social p {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .links a {
+    margin: 0 30px;
+  }
+  
+  .links a i {
+    font-size: 2rem;
+    color: rgb(39, 55, 70);
+  }
+  
+  .footer {
+    background:rgb(72, 201, 176);
+    color:rgb(39, 55, 70);
+    font-size: 12px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: 20px;
+  }
+
+  .footer-img{
+      width: 7%;
+      height: 13%;
+  }
+
+/*CIERRE FOOTER*/
+
+/*CIERRE CSS INDEX.HTML */
+
+/*CSS PREGUNTASFRE.HTML */
+.caja-fre {
+    width: 95%;
+    height: 430px;
+    margin: 30px;
+    background: url("../img/seccionpregunta.jpg") no-repeat center center/cover;
+    margin-bottom: 40px;
+  }
+  
+  .caja-sucursal p {
+    margin: 10px 0 20px 0;
+  }
+  
+  .caja-fre .contentido-fre {
+    width: 50%;
+    padding: 100px 0 0 30px;
+    color: rgb(189, 195, 199);
+    text-shadow: black;
+  }
+/*CIERRE CSS PREGUNTASFRE.HTML */
+
+/*ESTILO DE LAS TABLAS*/
+td{
+    background-color: rgb(72, 201, 176);
+    text-align:  center;
+}
+
+td input{
+    background-color: rgb(189, 195, 199);
+    height: 30px;
+    border: none;
+}
+
+th{
+    background-color: rgb(72, 201, 176);
+}
+/*CIERRE ESTILO DE LAS TABLAS*/
+
+
+/* FORMULARIO CUENTAS*/
+#cont-cuen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+
+#centrar-cuen {
+    max-width: 320px;
+    width: 100%;
+}
+
+.titulo-cuen {
+    font-size: 250%;
+    color:rgb(39, 55, 70);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#cuen {
+    width: 100%;
+    padding: 50px 30px;
+    background-color: rgb(72, 201, 176);
+    
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    box-sizing: border-box;
+}
+
+#cuen input {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color: rgba(0,0,0,);
+    
+    display: block;
+    width: 100%;
+    height: 40px;
+    
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 10px;
+    
+    box-sizing: border-box;
+    
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+#cuen input::placeholder {
+    font-family: 'Overpass', sans-serif;
+    color: rgb(189, 195, 199);
+}
+
+#cuen button {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color:rgb(189, 195, 199);
+    width: 100%;
+    height: 40px;
+    border: none;
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    background-color: rgb(39, 55, 70);
+    
+    margin-top: 10px;
+}
+
+#cuen button:hover {
+    background-color: rgb(189, 195, 199);
+    color:rgb(39, 55, 70);
+}
+
+.pie-form-cuen {
+    font-size: 90%;
+    text-align: center;    
+    margin-top: 15px;
+}
+
+.pie-form-cuen a {
+    display: block;
+    text-decoration: none;
+    color: rgb(39, 55, 70);
+    margin-bottom: 3px;
+}
+
+.pie-form a:hover {
+    color: #000;
+}
+
+/*CIERRE FORMULARIO CUENTAS*/

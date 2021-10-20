@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario lineas</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/actualizarli.js"></script>
+    <script src="js/eliminarli.js"></script>
+    <link rel="shortcut icon" href="img/icon.png">
+    <link href= "css/estilo.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header id="encabezado">
+        <img src="img/logo_large.png" class="logo-menu">
+        <div class="encacuadro">
+          <p><%= uss %></p>
+          <img src="img/logo_small_icon_only.png" alt="">
+          <a href="cerrar">Cerrar sesion</a>
+      </div>     
+      </header>
+  
+  <div class="menuvolver"><a href="/vistaadmin">volver al Menu principal</a></div>
+
+    <div id="cont-line">
+        <div id="centrar-line">
+            <div id="line">
+                <div class="titulo-line">
+                    Lineas
+                </div>
+                <form id="lineaform"  action="/frminsertarli" method="POST">                    
+                    <input type="text" name="LinCod" placeholder="Codigo linea" required>
+
+                    <input type="text" name="LinNom" placeholder="Nombre linea" required>
+
+                    <input type="text" name="LinMontoMaxCredito" placeholder="Monto max credito" required>
+
+                    <input type="text" name="LinPlazoMaxCred" placeholder="Plazo max credito" required>
+                    
+                    <button type="submit" title="Enviar" name="Enviar">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <from action="" name="frm" id="frm">
+        <table class="table">
+            <thead>
+                <tr>
+
+                    <th>CODIGO LINEA</th>
+                    <th>NOBRE LINEA</th>
+                    <th>MONTO MAX CREDITO</th>
+                    <th>PLAZO MAX CREDITO</th>
+                    <th>ACTUALIZAR</th>
+                    <th>ELIMINAR</th>
+
+
+                </tr>
+            </thead>
+
+            <tbody>
+             <% datos.forEach(function (datos){ %>    
+                <tr>
+                    <td><input type="text" value="<%=datos.LinCod%>" name="codigo" id="cod" class="cod"></td>
+                    <td><input type="text" value="<%=datos.LinNom%>" name="nombre" id="nom" class="nom"></td>
+                    <td><input type="text" value="<%=datos.LinMontoMaxCredito%>" name="moncredito" id="mon" class="mon"></td>
+                    <td><input type="text" value="<%=datos.LinPlazoMaxCred%>" name="plazocredito" id="plazo" class="plazo"></td>
+                    <td><input type="submit" value="Actualizar" name="btnact" id="btnact" class="btnact"></td>
+                    <td><input type="submit" value="Eliminar" name="btneli" id="btneli" class="btneli"></td>
+                </tr>
+             <%})%>
+            </tbody>
+        </table>
+    </from>
+</body>
+</html>

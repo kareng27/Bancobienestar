@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario clientes</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/actualizarusucli.js"></script>
+    <script src="js/eliminarcli.js"></script>
+    <link rel="shortcut icon" href="img/icon.png">
+    <link href= "css/estilo.css" rel="stylesheet" type="text/css">
+    <link href= "css/estilovistclien.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header id="encabezado">
+        <img src="img/logo_large.png" class="logo-menu">
+        <div class="encacuadro">
+          <a href="/usuariosclien"><%= uss %></a>
+          <img src="img/logo_small_icon_only.png" alt="">
+          <a href="cerrar">Cerrar sesion</a>
+      </div>     
+      </header>
+  
+  <div class="menuvolver"><a href="/vistacliente">volver al Menu principal</a></div>
+
+  <from action="" name="frm" id="frm">
+    <table class="table" id="tableusu">
+        <thead>
+            <tr>
+
+                <th>USUARIO</th>
+                <th>CLAVE</th>
+                <th>ACTUALIZAR</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+         <% datos.forEach(function (datos){ %>    
+            <tr>
+                <input type="hidden" value="<%=datos.UsuDoc%>" name="doccli" id="doc" class="doc">
+
+                <td><input type="text" value="<%=datos.UsuNom%>" name="nomusu" id="usu" class="usu"></td>
+                <td><input type="text" value="<%=datos.UsuClave%>" name="clave" id="cla" class="cla"></td>
+                <td><input type="submit" value="Actualizar" name="btnact" id="btnact" class="btnact"></td>
+            </tr>
+         <%})%>
+        </tbody>
+    </table>
+
+    <div class="espacio">.</div>
+</from>
+</body>
+</html>

@@ -1,0 +1,29 @@
+/*CSS DE CREDITOSCLIEN.EJS , LINESCLIEN. EJS , USUARIOCLIEN.EJS Y CUENTASEMPLE.EJS*/
+
+.table{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+#table{/*LINEASCLIEN*/
+ margin-left: 23%;
+}
+
+#tableusu{/*USUARIOCLIEN*/
+    margin-left: 32%;
+}
+
+#tablecuen{/*CUENTASCLIEN*/
+    margin-left: 12%;
+}
+
+.titcuen{/*CUENTASCLIEN*/
+    text-align: center;
+}
+
+.espacio{
+    margin-top: 90px;
+    width: 10%;
+    height: 150px;
+    color: transparent;
+}

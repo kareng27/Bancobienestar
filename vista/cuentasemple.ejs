@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario cuenta</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/eliminarcuen.js"></script>
+    <link rel="shortcut icon" href="img/icon.png">
+    <link href= "css/estilo.css" rel="stylesheet" type="text/css">
+    <link href= "css/estilovistclien.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header id="encabezado">
+        <img src="img/logo_large.png" class="logo-menu">
+        <div class="encacuadro">
+          <p><%= uss %></p>
+          <img src="img/logo_small_icon_only.png" alt="">
+          <a href="cerrar">Cerrar sesion</a>
+      </div>     
+      </header>
+  
+  <div class="menuvolver"><a href="/vistaempleado">volver al Menu principal</a></div>
+
+    <div id="cont-cuen">
+        <div id="centrar-cuen">
+            <div id="cuen">
+                <div class="titulo-cuen">
+                    Cuenta
+                </div>
+                <form id="cuentaform" action="/frminsertarcuen" method="POST">
+                    <input type="text" name="CueCod" placeholder="Codigo cuenta" required>
+
+                    <input type="text" name="CueCliDoc" placeholder="Documento cliente" required>
+                    
+                    <input type="text" name="CueTipo" placeholder="Tipo de cuenta" required>
+
+                    <input type="text" name="CueSaldo" placeholder="Saldo" required>
+                    
+                    <button type="submit" title="Enviar" name="Enviar">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <from action="" name="frm" id="frm">
+        <table class="table" id="table">
+            <thead>
+                <tr>
+
+                    <th>CODIGO</th>
+                    <th>DOCUMENTO</th>
+                    <th>TIPO </th>
+                    <th>SALDO</th>
+                    <th>ELIMINAR</th>
+
+
+                </tr>
+            </thead>
+
+            <tbody>
+             <% datos.forEach(function (datos){ %>    
+                <tr>
+                    <td><input type="text" value="<%=datos.CueCod%>" name="cod" id="cod" class="cod"></td>
+                    <td><input type="text" value="<%=datos.CueCliDoc%>" name="doc" id="doc" class="doc"></td>
+                    <td><input type="text" value="<%=datos.CueTipo%>" name="tip" id="tip" class="tip"></td>
+                    <td><input type="text" value="<%=datos.CueSaldo%>" name="sal" id="sal" class="sal"></td>
+                    <td><input type="submit" value="Eliminar" name="btneli" id="btneli" class="btneli"></td>
+                </tr>
+             <%})%>
+            </tbody>
+        </table>
+    </from>
+</body>
+</html>

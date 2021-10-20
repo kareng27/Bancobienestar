@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente</title>
+    <link rel="shortcut icon" href="img/icon.png">
+    <link rel="stylesheet" href="css/vistaadmin.css">
+</head>
+<body>
+    <header id="encabezado">
+        <img src="img/logo_large.png" class="logo-menu">
+        <div class="cuadro">
+            <!--<p><%= uss %></p>-->
+            <a href="/usuariosclien"><%= uss %></a>
+            <img src="img/logo_small_icon_only.png" alt="">
+            <a href="cerrar">Cerrar sesion</a>
+        </div>
+        </div>
+    </header>
+
+    <div class="menu"><h1>Menu principal</h1></div>
+
+    <from action="" name="frm" id="frm">
+        <table class="table">
+            <thead>
+                <tr>
+
+                    <th>Documento</th>
+                    <th>NOMBRE</th>
+                    <th>APELLIDO</th>
+                    <th>CORREO</th>
+                    <th>CELULAR</th>
+                    <th>SEXO</th>
+                    <th>DATE</th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+             <% datos.forEach(function (datos){ %>    
+                <tr>
+                    <td><input type="text" value="<%=datos.CliDoc%>" name="doc" id="doc" class="doc"></td>
+                    <td><input type="text" value="<%=datos.CliNom%>" name="nom" id="nom" class="nom"></td>
+                    <td><input type="text" value="<%=datos.CliApe%>" name="ape" id="ape" class="ape"></td>
+                    <td><input type="text" value="<%=datos.CliCorreo%>" name="cor" id="cor" class="cor"></td>
+                    <td><input type="text" value="<%=datos.CliCelular%>" name="cel" id="cel" class="cel"></td>
+                    <td><input type="text" value="<%=datos.CliSexo%>" name="sexo" id="sexo" class="sexo"></td>
+                    <td><input type="text" value="<%=datos.CliFechaNa%>" name="fec" id="fec" class="fec"></td>
+                </tr>
+             <%})%>
+            </tbody>
+        </table>
+    </from>    
+
+    <section class="contenedor">
+        <div class="caja"><a href="/lineasclien">Linea de Creditos</a></div>
+        <div class="caja"><a href="/creditosclien">Creditos</a></div>
+        <div class="caja"><a href="/cuentasclien">Cuentas</a></div>
+    </section>
+</body>
+</html>

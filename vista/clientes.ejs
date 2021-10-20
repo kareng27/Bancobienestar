@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario clientes</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/actualizarcli.js"></script>
+    <script src="js/eliminarcli.js"></script>
+    <link rel="shortcut icon" href="img/icon.png">
+    <link href= "css/estilo.css" rel="stylesheet" type="text/css">
+</head>
+<body class="clibodyoverflow">
+    <header id="encabezado">
+        <img src="img/logo_large.png" class="logo-menu">
+        <div class="encacuadro">
+          <p><%= uss %></p>
+          <img src="img/logo_small_icon_only.png" alt="">
+          <a href="cerrar">Cerrar sesion</a>
+      </div>     
+      </header>
+  
+  <div class="menuvolver"><a href="/vistaadmin">volver al Menu principal</a></div>
+
+    <div id="cont-cli">
+        <div id="centrar-cli">
+            <div id="cli">
+                <div class="titulo-cli">
+                    Clientes
+                </div>
+                <form id="clienteform" action="/frminsertarcli" method="POST">
+                    <input type="text" name="CliDoc" placeholder="Documento" required>
+
+                    <input type="text" name="CliNom" placeholder="Nombre" required>
+                    
+                    <input type="text" name="CliApe" placeholder="Apellido" required>
+
+                    <input type="text" name="CliCorreo" placeholder="Correo" required>
+
+                    <input type="text" name="CliCelular" placeholder="Celular" required>
+
+                    <input type="text" name="CliSexo" placeholder="Sexo" required>
+
+                    <input type="date" name="CliFechaNa" placeholder="Fecha" required>
+                    
+                    <button type="submit" title="Enviar" name="Enviar">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <from action="" name="frm" id="frm">
+        <table class="table">
+            <thead>
+                <tr>
+
+                    <th>Documento</th>
+                    <th>NOMBRE</th>
+                    <th>APELLIDO</th>
+                    <th>CORREO</th>
+                    <th>CELULAR</th>
+                    <th>SEXO</th>
+                    <th>DATE</th>
+                    <th>ACTUALIZAR</th>
+                    <th>ELIMINAR</th>
+
+
+                </tr>
+            </thead>
+
+            <tbody>
+             <% datos.forEach(function (datos){ %>    
+                <tr>
+                    <td><input type="text" value="<%=datos.CliDoc%>" name="doc" id="doc" class="doc"></td>
+                    <td><input type="text" value="<%=datos.CliNom%>" name="nom" id="nom" class="nom"></td>
+                    <td><input type="text" value="<%=datos.CliApe%>" name="ape" id="ape" class="ape"></td>
+                    <td><input type="text" value="<%=datos.CliCorreo%>" name="cor" id="cor" class="cor"></td>
+                    <td><input type="text" value="<%=datos.CliCelular%>" name="cel" id="cel" class="cel"></td>
+                    <td><input type="text" value="<%=datos.CliSexo%>" name="sexo" id="sexo" class="sexo"></td>
+                    <td><input type="text" value="<%=datos.CliFechaNa%>" name="fec" id="fec" class="fec"></td>
+                    <td><input type="submit" value="Actualizar" name="btnact" id="btnact" class="btnact"></td>
+                    <td><input type="submit" value="Eliminar" name="btneli" id="btneli" class="btneli"></td>
+                </tr>
+             <%})%>
+            </tbody>
+        </table>
+    </from>
+</body>
+</html>

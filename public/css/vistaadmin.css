@@ -1,0 +1,123 @@
+body{
+    background-color: rgb(52, 73, 94);
+    background: url("../img/fondo.PNG") no-repeat center center/cover;
+    overflow-x: hidden;
+}
+
+
+/*MENU PRINCIPAL*/
+#encabezado{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+	height: 80px;
+	width: 1325px;
+    margin-top: 20px;
+	border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+text-align: center;
+}
+
+/*CIERRE MENU PRINCIPAL PAGINAS*/
+
+.logo-menu{
+    width: 190px;
+    height: 73px;
+    margin-left: 43.5%;
+}
+
+.cuadro{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(72, 201, 176);
+    /*width: 18%;*/
+    width: auto;
+    height: 60px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cuadro img{
+    margin: 4px;
+    height: 45px;
+    width: 20%;
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+}
+
+.cuadro p{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: rgb(52, 73, 94);
+}
+
+.cuadro a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: rgb(52, 73, 94);
+}
+
+.cuadro a:hover{
+    background-color: rgb(52, 73, 94);
+    color: rgb(189, 195, 199);
+}
+
+/*Contenedor de menu*/
+
+.menu{
+    width: 40%;
+    text-align: center;
+    color: rgb(39, 55, 70);
+}
+.menu h1{
+    background-color: rgb(72, 201, 176);
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 300px;
+    margin-left: 25%;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+
+.caja{
+    width: 50%;
+    height: 50px;
+    text-align: center; 
+    border: 2px solid rgb(52, 73, 94); 
+    background-color: rgb(189, 195, 199);
+}
+
+.caja a{
+    text-decoration: none;
+    font-size: 1.6em;
+    color: rgb(52, 73, 94);
+}
+
+
+
+td{
+    background-color: rgb(72, 201, 176);
+    text-align:  center;
+}
+
+td input{
+    background-color: rgb(189, 195, 199);
+    height: 30px;
+    border: none;
+}
+
+table{
+    margin-left: 3.5%;
+    margin-bottom: 3%;
+}
+
+th{
+    background-color: rgb(72, 201, 176);
+}

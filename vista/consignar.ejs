@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario creditos</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/actualizarcre.js"></script>
+    <script src="js/eliminarcre.js"></script>
+    <link rel="shortcut icon" href="img/icon.png">
+    <link href= "css/estilo.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header id="encabezado">
+        <img src="img/logo_large.png" class="logo-menu">
+        <div class="encacuadro">
+          <p><%= uss %></p>
+          <img src="img/logo_small_icon_only.png" alt="">
+          <a href="cerrar">Cerrar sesion</a>
+      </div>     
+      </header>
+  
+  <div class="menuvolver"><a href="/cuentasclien">volver </a></div>
+
+    <div id="cont-cre">
+        <div id="centrar-cre">
+            <div id="cre">
+                <div class="titulo-cre">
+                    Consignar
+                </div>
+                <form id="crediform" action="/frmconsignar" method="POST">
+                    <input type="text" name="CueSaldo" placeholder="Saldo" required>
+
+                    <input type="text" name="CueTipo" placeholder="Tipo de cuenta" required>
+
+                    <button type="submit" title="Enviar" name="Enviar">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
