@@ -52,6 +52,30 @@ cnn.query('INSERT INTO tbusuarios SET?',{UsuDoc:d,UsuNom:u,UsuClave:password,Usu
 });
 }
 
+/*
+controller.insertar=async(req,res,next)=>{
+//console.log(req.body)
+const d=req.body.UsuDoc;
+const u=req.body.UsuNom;
+const c=req.body.UsuClave;
+const r=req.body.UsuRol;
+const e=req.body.UsuEstado;
+const i=req.body.UsuImagen;
+const password=await bcryptjs.hash(c,8)
+
+console.log(d,u);
+cnn.query('INSERT INTO tbusuarios SET?',{UsuDoc:d,UsuNom:u,UsuClave:password,UsuRol:r,UsuEstado:e,UsuImagen:i},(err,resbd)=>{
+    if(err){
+        next(new Error(err))
+    }
+    else{
+        //console.log(resbd);
+        res.redirect('usuarios')
+    }
+});
+}
+
+*/
 controller.login=async(req,res,next)=>{
     const usu=await req.body.usuario;
     const cla=await req.body.password;
@@ -142,6 +166,28 @@ controller.vistacliente=(req,res,next)=>{
     }
 }
 
+controller.insertar=async(req,res,next)=>{
+    //console.log(req.body)
+    const d=req.body.dd;
+    const u=req.body.uu;
+    const c=req.body.cc;
+    const r=req.body.rr;
+    const e=req.body.ee;
+    const i=req.body.ii;
+    const password=await bcryptjs.hash(c,8)
+    
+    console.log(d,u);
+    cnn.query('INSERT INTO tbusuarios SET?',{UsuDoc:d,UsuNom:u,UsuClave:password,UsuRol:r,UsuEstado:e,UsuImagen:i},(err,resbd)=>{
+        if(err){
+            next(new Error(err))
+        }
+        else{
+            //console.log(resbd);
+            res.redirect('usuarios')
+        }
+    });
+    }
+    
 
 controller.actualizar=async(req,res,next)=>{
   const docx=req.body.dd;

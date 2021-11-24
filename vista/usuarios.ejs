@@ -8,6 +8,7 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/actualizar.js"></script>
     <script src="js/eliminar.js"></script>
+    <script src="js/insertarusu.js"></script>
     <link rel="shortcut icon" href="img/icon.png">
     <link href= "css/estilo.css" rel="stylesheet" type="text/css">
 </head>
@@ -31,19 +32,19 @@
                 </div>
                 <form id="loginform" action="/frminsertar" method="POST">
 
-                    <input type="text" name="UsuDoc" placeholder="Documento" required>
+                    <input type="text" name="UsuDoc" class="UsuDoc" placeholder="Documento" required>
 
-                    <input type="text" name="UsuNom" placeholder="Usuario" required>
+                    <input type="text" name="UsuNom" class="UsuNom" placeholder="Usuario" required>
                     
-                    <input type="password" placeholder="Clave" name="UsuClave" required>
+                    <input type="password" placeholder="Clave" class="UsuClave" name="UsuClave" required>
 
-                    <input type="text" name="UsuRol" placeholder="Rol" required>
+                    <input type="text" name="UsuRol" class="UsuRol" placeholder="Rol" required>
 
-                    <input type="text" name="UsuEstado" placeholder="Estado" required>
+                    <input type="text" name="UsuEstado" class="UsuEstado" placeholder="Estado" required>
 
-                    <input type="text" name="UsuImagen" placeholder="Imagen texto" required>
+                    <input type="text" name="UsuImagen" class="UsuImagen" placeholder="Imagen texto" required>
                     
-                    <button type="submit" title="Enviar" >Enviar</button>
+                    <button type="button" title="Enviar" class="btnins">Enviar</button>
                 </form>
                 <div class="pie-form-usu">
                     <a href="#">¿Perdiste tu contraseña?</a>

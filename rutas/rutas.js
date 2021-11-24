@@ -26,7 +26,7 @@ rutas.get('/transferir',controller.vistatransferir)
 rutas.post('/frmretirar',controller.retirarcuentaclien)
 rutas.post('/frmconsignar',controller.consignarcuentaclien)
 rutas.post('/frmtransferir',controller.insertartransferir)
-rutas.post('/frminsertar',controller.insertar)
+/*rutas.post('/frminsertar',controller.insertar)*/
 rutas.post('/frminsertarcli',controller.insertarcli)
 rutas.post('/frminsertarcliemple',controller.insertarcliemple)
 rutas.post('/frminsertarcre',controller.insertarcre)
@@ -35,6 +35,8 @@ rutas.post('/frminsertarli',controller.insertarli)
 rutas.post('/frminsertarliemple',controller.insertarliemple)
 rutas.post('/frminsertarcuen',controller.insertarcuen)
 rutas.get('/vistacliente',controller.cliente)
+
+rutas.post('/insertarusu',controller.insertar)
 
 rutas.post('/actualizar',controller.actualizar)
 rutas.post('/eliminar',controller.eliminar)
